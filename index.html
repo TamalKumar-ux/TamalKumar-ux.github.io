@@ -1,37 +1,74 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>My Digital Store</title>
+<title>Shop UI</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h1>My Game Top Up Store</h1>
+<header class="navbar">
+    <div class="logo">JUBALY</div>
+    <div class="user">👤</div>
 </header>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Shop</a>
-<a href="#">Top Up</a>
-<a href="#">Contact</a>
-</nav>
+<div class="container">
 
-<section class="products">
+    <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Top Up</a>
+        <a href="#">FAQs</a>
+        <a href="#">Become an Affiliate</a>
+    </div>
 
-<div class="card">
-<h3>Free Fire Top Up</h3>
-<button onclick="buy()">Buy Now</button>
+    <div class="content">
+
+        <h2>New Arrival 🔥</h2>
+
+        <div class="products">
+
+            <div class="card">
+                <img src="img1.jpg">
+                <p>ChatGPT Digital</p>
+            </div>
+
+            <div class="card">
+                <img src="img2.jpg">
+                <p>Eggy Party Top Up</p>
+            </div>
+
+            <div class="card">
+                <img src="img3.jpg">
+                <p>Genshin Impact</p>
+            </div>
+
+        </div>
+
+        <h2>HOT ITEM</h2>
+
+        <div class="products">
+
+            <div class="card">
+                <img src="img4.jpg">
+                <p>Brilliant Connect</p>
+            </div>
+
+            <div class="card">
+                <img src="img5.jpg">
+                <p>Bonus Top-Up</p>
+            </div>
+
+            <div class="card">
+                <img src="img6.jpg">
+                <p>Free Fire Level Pass</p>
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
-
-<div class="card">
-<h3>Gift Cards</h3>
-<button onclick="buy()">Buy Now</button>
-</div>
-
-</section>
-
-<script src="script.js"></script>
 
 </body>
 </html>
