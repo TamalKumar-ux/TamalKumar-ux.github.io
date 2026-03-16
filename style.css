@@ -1,44 +1,108 @@
 body{
-font-family: Arial;
-margin:0;
-background:black;
-color:white;
+    margin:0;
+    font-family: Arial;
+    background:black;
+    color:white;
 }
 
-header{
-background:green;
-padding:20px;
-text-align:center;
+/* Header */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    color:black;
+    padding:15px 20px;
 }
 
-nav{
-background:black;
-padding:10px;
-text-align:center;
-border-bottom:2px solid green;
+.logo{
+    font-weight:bold;
+    font-size:22px;
 }
 
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
+.profile{
+    font-size:22px;
 }
 
-nav a:hover{
-color:green;
+/* Layout */
+
+.container{
+    display:flex;
 }
 
-.products{
-display:flex;
-justify-content:center;
-margin-top:40px;
+/* Sidebar */
+
+.sidebar{
+    width:220px;
+    background:white;
+    color:black;
+    min-height:100vh;
 }
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    cursor:pointer;
+}
+
+.sidebar li:hover{
+    background:#00a86b;
+    color:white;
+}
+
+.active{
+    background:#00a86b;
+    color:white;
+}
+
+/* Content */
+
+.content{
+    flex:1;
+    padding:20px;
+}
+
+/* New Arrival */
+
+.arrival{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.small{
+    width:120px;
+}
+
+/* Cards */
 
 .card{
-background:white;
-color:black;
-padding:20px;
-margin:10px;
-border-radius:10px;
-border:2px solid green;
+    background:#111;
+    border-radius:10px;
+    padding:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card img{
+    width:100%;
+    border-radius:8px;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    border:1px solid #00ff88;
+}
+
+/* Hot Items */
+
+.hot{
+    display:flex;
+    gap:20px;
 }
