@@ -1,26 +1,31 @@
 body{
 font-family: Arial;
 margin:0;
-background:#0b1e2d;
+background:black;
 color:white;
 }
 
 header{
-background:#ff6a00;
+background:green;
 padding:20px;
 text-align:center;
 }
 
 nav{
-background:#111;
+background:black;
 padding:10px;
 text-align:center;
+border-bottom:2px solid green;
 }
 
 nav a{
 color:white;
 margin:10px;
 text-decoration:none;
+}
+
+nav a:hover{
+color:green;
 }
 
 .products{
@@ -30,8 +35,10 @@ margin-top:40px;
 }
 
 .card{
-background:#162a3a;
+background:white;
+color:black;
 padding:20px;
 margin:10px;
 border-radius:10px;
+border:2px solid green;
 }
